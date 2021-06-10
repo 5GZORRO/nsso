@@ -1,0 +1,8 @@
+  {
+            "nstId": "vcdn_e2e_nst",
+            "nstName": "vcdn e2e NST",
+            "nstVersion": "1.0",
+            "nstProvider": "ICOM",
+            "nsdId": "vcdn_nsd",
+            "nsdVersion": "1.0"
+        }

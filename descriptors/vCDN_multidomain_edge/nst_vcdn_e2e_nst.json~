@@ -1,0 +1,23 @@
+  {
+            "nstId": "vcdn_e2e_nst",
+            "nstName": "vcdn e2e NST",
+            "nstVersion": "1.0",
+            "nstProvider": "ICOM",
+            "nsdId": "vcdn_nsd",
+            "nsdVersion": "1.0"
+        },
+        {
+            "nstId": "edge_cache_nst",
+            "nstName": "edge_cache_nst",
+            "nstVersion": "1.0",
+            "nstProvider": "ICOM",
+            "nsdId": "edge_cache_nsd",
+            "nsdVersion": "1.0"
+        }, {
+            "nstId": "vcdn_nst",
+            "nstName": "vcdn  NST",
+            "nstVersion": "1.0",
+            "nstProvider": "ICOM",
+            "nsdId": "vcdn_nsd",
+            "nsdVersion": "1.0"
+        }

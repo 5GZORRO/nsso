@@ -1,0 +1,98 @@
+{
+        "version": "1.0",
+        "name": "vCDN_edge_ICOM",
+        "description": "vCDN edge cache service",
+        "sliceServiceType": "EMBB",
+        "embbServiceCategory": "DENSE_URBAN",
+        "parameters": [
+            {
+                "parameterId": "users",
+                "parameterName": "users",
+                "parameterType": "number",
+                "parameterDescription": "users",
+                "applicabilityField": "entertainment"
+            }
+        ],
+        "atomicComponents": [
+            {
+                "componentId": "edge_cache",
+                "serversNumber": 1,
+                "endPointsIds": [
+                    "sap_cdn",
+                    "sap_mgmt",
+                    "sap_upf"
+                    
+                ]
+            }, {
+                "componentId": "streaming_service",
+                "serversNumber": 1,
+                "endPointsIds": [
+                    "sap_origin",
+                    "sap_mgmt",
+                    "sap_cdn"
+                    
+                ]
+            }
+        ],
+        "endPoints": [
+            {
+                "endPointId": "sap_upf",
+                "external": true,
+                "management": false,
+                "ranConnection": true
+            },
+            {
+                "endPointId": "sap_mgmt",
+                "external": true,
+                "management": true,
+                "ranConnection": false
+            },
+            
+            {
+                "endPointId": "sap_origin",
+                "external": true,
+                "management": false,
+                "ranConnection": false
+            },
+            
+            {
+                "endPointId": "sap_cnd",
+                "external": true,
+                "management": false,
+                "ranConnection": false
+            }
+        ],
+         "connectivityServices": [
+            {
+                "endPointIds": [
+                    "sap_origin"
+                    
+                ],
+                "external": true
+            },
+             {
+                "endPointIds": [
+                    "sap_mgmt"
+                    
+                ],
+                "external": true
+            },
+            {
+                "endPointIds": [
+                    "sap_upf"
+                    
+                ],
+                "external": true
+            },
+            {
+                "endPointIds": [
+                    "sap_cdn"
+                    
+                ],
+                "external": true
+            }
+        ],
+        "configurableParameters" :[
+            "product_id"
+        ]
+    }

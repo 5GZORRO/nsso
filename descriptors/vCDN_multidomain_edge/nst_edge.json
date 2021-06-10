@@ -1,0 +1,8 @@
+  {
+            "nstId": "edge_cache_nst",
+            "nstName": "Edge Cache NST",
+            "nstVersion": "1.0",
+            "nstProvider": "ICOM",
+            "nsdId": "edge_cache_nsd",
+            "nsdVersion": "1.0"
+        }

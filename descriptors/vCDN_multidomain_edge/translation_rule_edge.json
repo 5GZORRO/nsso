@@ -1,0 +1,14 @@
+ {
+            "nstId": "edge_cache_nst",
+            "nsdId": "edge_cache_nsd",
+            "nsdVersion": "1.0",
+            "nsFlavourId": "df_default",
+            "nsInstantiationLevelId": "il_default",
+            "input": [
+                {
+                    "parameterId": "users",
+                    "minValue": 0,
+                    "maxValue": 1001
+                }
+            ]
+        }
