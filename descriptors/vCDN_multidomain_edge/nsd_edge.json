@@ -266,9 +266,10 @@
 					"name": "CurrentClientConnections.edge_cache",
 					"performanceMetric": "CurrentClientConnections.edge_cache",
                     "params":{
-                        "aggregationMethod":"aggregationMethod",
-                        "timestampStep": "30s"
-                    }
+                        "aggregationMethod":"AVG",
+                        "timestampStep": "30s",
+                    	"step":"AVG"
+		    }
 				}
                 }
            ],
