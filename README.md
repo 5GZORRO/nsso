@@ -29,30 +29,26 @@ The software code is available for the first release isd available on:
 
 ## Installation
 #### Docker installation
-
+In the install folder we provide example docker compose files
 #### Configuration 
 The configuration parameters shall be passed as environment variables to the docker container. Here we enumerate the main configuration parameters
 * domain_id (an identifier for the domain, example: operator-a)
 * spring.datasource.url (URL of postgres, example: jdbc:postgresql://postgres10:5432/sebastian)
 * spring.datasource.username (Postgres username)
 * spring.datasource.password (Postgres password)
+* spring.rabbitmq.host (host of RabbitMQ, example: rabbitmq)
 * nfvo.catalogue.type (The type of NFVO Catalogue, OSM10 for 5GZORRO scenarios)
 * nfvo.lcm.type (The type of NFVO LCM API, OSM10 for 5GZORRO scenarios)
 * nfvo.catalogue.address (the address of the NFVO, example: http://localhost)
 * nfvo.lcm.address (the address of the NFVO, example: http://localhost)
 * nfvo.lcm.username (credentials to use with the NFVO for LCM)
 * nfvo.lcm.password (credentials to use with the NFVO for LCM)
+* nfvo.lcm.vim (OSM VIM ID)
 * nfvo.catalogue.username (credentials to use with the NFVO for VNF and NS catalogue management)
 * nfvo.lcm.monitoring.url (address of the monitoring module of the NFVO, example: http://mda)
-* nfvo.lcm.elicensing.address (address of the elicensing manager, example: http://elicensemgr
-* nfvo.lcm.external_monitoring.address
-              value: http://mda:4000
-            - name: nfvo.lcm.external_monitoring.params
-              value: \{\}
-            - name: nfvo.lcm.vim
-              value: 3ec374b1-d933-44ed-8183-876a5b09ee53
-            - name: spring.rabbitmq.host
-              value: rabbitmq
+* nfvo.lcm.elicensing.address (address of the elicensing manager, example: http://elicensemgr)
+* nfvo.lcm.external_monitoring.address (address the MDA module, example: http://mda:4000)
+ 
             
 
 ## Maintainers
