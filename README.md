@@ -53,8 +53,8 @@ The configuration parameters shall be passed as environment variables to the doc
 
 ## Maintainers
 
-** Juan Brenes **  - j.brenes@nextworks.it
-** Pietro Giardina ** - p.giardina@nextworks.it
+* **Juan Brenes**  - j.brenes@nextworks.it
+* **Pietro Giardina** - p.giardina@nextworks.it
 
 ## License
 Most of the components of the NSSO are licensed using the Apache 2.0 license
